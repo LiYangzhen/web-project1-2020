@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet" type="text/css">
     <link href="src/css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="src/css/main.css" rel="stylesheet" type="text/css">
+    <link href="src/css/base.css" rel="stylesheet" type="text/css">
     <script src="src/js/prefixfree.min.js" rel="script" type="text/javascript"></script>
 
     <meta name="theme-color" content="#232a34">
@@ -17,7 +17,7 @@
 
 <body>
 <!--页眉-->
-<header class="section">
+<header>
     <div class="banner">
         <a href="index.html" class="logo">
             <img src="src/image/logo.svg" alt="logo">
@@ -30,17 +30,20 @@
 </header>
 <!--内容-->
 <main>
+    <p>
 
+
+    </p>
 </main>
 <!--页脚-->
 <footer>
-<!--    导航阵列-->
-    <ul class='footer__body'>
-<!--        第一列-->
-        <li style='flex-basis:80%;'>
-            <ul class='footer__body__column'>
+    <!--    导航阵列-->
+    <ul class="footer__body">
+        <!--        第一列-->
+        <li>
+            <ul class="footer__body__column">
                 <li>
-                    <div class="">ImgShow</div>
+                    <div class="footer__body__column__title">ImgShow</div>
                 </li>
                 <li>
                     <a class="" href="">关于</a>
@@ -58,22 +61,28 @@
                     <a class="" href="">开发人员</a>
                 </li>
                 <li>
-                    <div class='rd__button-group rd__button-group--bar rd__button-group--no-shadow'>
-                        <a class="" href="">微信</a>
-                        <a class="" href="">QQ</a>
-                        <a class="" href="">邮箱</a>
+                    <div class="icon-button-group">
+                        <a class="" href="">
+                            <img src="src/image/微信.svg" alt="微信">
+                        </a>
+                        <a class="" href="">
+                            <img src="src/image/qq.svg" alt="QQ">
+                        </a>
+                        <a class="" href="">
+                            <img src="src/image/github.svg" alt="Github">
+                        </a>
+                        <a class="" href="">
+                            <img src="src/image/邮箱.svg" alt="邮箱">
+                        </a>
                     </div>
                 </li>
             </ul>
         </li>
-<!--        第二列-->
-        <li style='flex-basis:120%;'>
-            <ul class='footer__body__column'>
+        <!--        第二列-->
+        <li>
+            <ul class="footer__body__column">
                 <li>
-                    <div class="">免费素材照片</div>
-                </li>
-                <li>
-                    <a class="" href="">热门搜索</a>
+                    <div class="footer__body__column__title">免费素材照片</div>
                 </li>
                 <li>
                     <a class="" href="">黑白摄影</a>
@@ -95,11 +104,11 @@
                 </li>
             </ul>
         </li>
-<!--        第三列-->
-        <li style='flex-basis:90%;'>
-            <ul class='footer__body__column'>
+        <!--        第三列-->
+        <li>
+            <ul class="footer__body__column">
                 <li>
-                    <div class="">壁纸</div>
+                    <div class="footer__body__column__title">壁纸</div>
                 </li>
                 <li>
                     <a class="" href="">银河壁纸</a>
@@ -114,9 +123,6 @@
                     <a class="" href="">4k 桌面</a>
                 </li>
                 <li>
-                    <a class="" href="">三星桌面</a>
-                </li>
-                <li>
                     <a class="" href="">愛情壁紙</a>
                 </li>
                 <li>
@@ -125,20 +131,20 @@
             </ul>
         </li>
     </ul>
-<!--    页脚横幅-->
-    <div class='footer__navbar'>
-        <ul class='footer__navbar__list'>
+    <!--    页脚横幅-->
+    <div class="footer__navbar">
+        <ul class="footer__navbar__list">
             <li>
-                <a class='footer__logo' href="">
-                    <img alt="高清免费图片" class="" src=""/>
-                    <div class='footer__logo__text'>
+                <a class="footer__logo" href="">
+                    <img class="" src="" alt=" "/>
+                    <div class="footer__logo__text">
                         <p>ImgShow</p>
                         <p> — 免费的精美照片由我们才华横溢的社区成员提供。</p>
                     </div>
                 </a>
             </li>
         </ul>
-        <ul class='footer__navbar__list'>
+        <ul class="footer__navbar__list">
             <li>
                 <a class="" href="">使用条款</a>
             </li>
@@ -152,11 +158,11 @@
                 <a class="" href="">版本说明</a>
             </li>
             <li>
-                <a class='js-show-switch-locale footer__navbar__list__item' data-track-action='footer'
-                   data-track-label='switch-locale' href='#' rel='nofollow'>
-                    <div class='footer__navbar__localize-selector'>
-                        <div class='js-switch-locale-flag'></div>
-                        <div class='footer__link'>简体中文</div>
+                <a class="js-show-switch-locale footer__navbar__list__item" data-track-action="footer"
+                   data-track-label="switch-locale" href="#" rel="nofollow">
+                    <div class="footer__navbar__localize-selector">
+                        <div class="js-switch-locale-flag"></div>
+                        <div class="footer__link">简体中文</div>
                     </div>
                 </a>
             </li>

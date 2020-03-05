@@ -10,16 +10,26 @@ body {
     color: #222;
 }
 
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/*-----------------------------------------------*/
+/*页眉*/
+header {
+    background-color: #232a34;
+    color: white;
+    padding-top: 5px;
+}
+
 .banner {
     margin: 0.8em 2em 0 2em;
     display: flex;
     align-items: flex-end;
-}
-
-.section {
-    background-color: #232a34;
-    color: white;
-    padding-top: 5px;
 }
 
 .banner a.logo {
@@ -37,7 +47,6 @@ body {
 .banner a.logo p {
     margin: 0.1em 0 0.5em 0;
     color: white;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.7em;
 }
 
@@ -62,3 +71,53 @@ body {
     color: black;
 }
 
+/*-----------------------------------------------*/
+/*页脚*/
+footer {
+    background-color: #071b4d;
+    color: white;
+    font-size: 1.7em;
+    line-height: 2em;
+}
+
+.footer__body {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #45547a;
+}
+
+.footer__body__column {
+    width: 12em;
+}
+
+.footer__body__column__title {
+    font-weight: bold;
+}
+
+.footer__body__column li a {
+    color: #9ca4b8;
+    text-decoration: none;
+}
+
+.icon-button-group {
+    display: flex;
+}
+
+.icon-button-group a{
+    flex: 1 1 ;
+}
+
+.footer__logo {
+    display: flex;
+}
+
+.footer__navbar {
+    display: flex;
+}
+
+.footer__navbar__list {
+    display: flex;
+}
