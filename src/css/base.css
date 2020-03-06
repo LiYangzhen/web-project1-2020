@@ -171,9 +171,8 @@ footer {
 
 .languageChoose {
     display: flex;
-    border-radius: 10px;
-    border-color: #9ca4b8;
-    border-style: solid;
+    border-radius: 5px;
+    border: 1px solid #45547a;
     padding-left: 0.2em;
 }
 
