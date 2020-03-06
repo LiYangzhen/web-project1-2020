@@ -57,10 +57,8 @@ header {
     font-weight: 600;
     font-size: 1.4em;
     letter-spacing: .1rem;
-    text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
-    cursor: pointer;
     margin-left: 5px;
     border-radius: 4px 4px 0 0;
     background-color: rgba(255, 255, 255, .4);
@@ -75,8 +73,8 @@ header {
 /*页脚*/
 footer {
     background-color: #071b4d;
-    color: white;
-    font-size: 1.7em;
+    color: #9ca4b8;;
+    font-size: 1.5em;
     line-height: 2em;
 }
 
@@ -84,9 +82,9 @@ footer {
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: space-around;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding: 2em;
     border-bottom: 1px solid #45547a;
+    margin-bottom: 0;
 }
 
 .footer__body__column {
@@ -95,6 +93,7 @@ footer {
 
 .footer__body__column__title {
     font-weight: bold;
+    color: white;
 }
 
 .footer__body__column li a {
@@ -106,18 +105,65 @@ footer {
     display: flex;
 }
 
-.icon-button-group a{
-    flex: 1 1 ;
+.icon-button-group a {
+    flex: 1 1;
 }
 
-.footer__logo {
-    display: flex;
+.footer__logo__text {
+    font-size: 0.9em;
 }
 
 .footer__navbar {
     display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+.footer__navbar ul {
+    margin: 0;
+}
+
+.footer__navbar a, p {
+    color: #9ca4b8;
+    text-decoration: none;
+}
+
+.footer__navbar__logo {
+    display: flex;
+    padding: 0 2em;
+    flex: 1;
+}
+
+.footer__navbar__logo p {
+    margin-left: 1em;
+    max-width: 23em;
+    line-height: normal;
+}
+
+.footer__navbar__logo span {
+    color: white;
+    font-weight: bold;
 }
 
 .footer__navbar__list {
     display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    flex-flow: row wrap;
+    margin-right: 1em;
+    padding-top: 1em;
 }
+
+.footer__navbar__list li {
+    margin:0 0.5em;
+    font-weight: bold;
+    width: 4em;
+}
+
+.footer__navbar__list li:first-of-type {
+    margin-left: 0;
+}
+
+.footer__navbar__list:last-child {
+    margin-right: 1em;
+}
+
