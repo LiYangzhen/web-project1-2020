@@ -1,0 +1,38 @@
+h3 {
+    font-size: 2rem;
+    margin: 0.7rem 2.9rem 0;
+}
+
+.imgGroup {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.imgGroup a {
+    width: 30rem;
+    height: 36rem;
+    background-color: #d9d9d9;
+    border-radius: 1.5rem;
+    margin: 3rem 4rem 2rem;
+    cursor: pointer;
+}
+
+.imgGroup a p {
+    color: #a9a9a9;
+    font-size: 1.3rem;
+    margin: 0 2.9rem;
+    height: 2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.imgGroup a img {
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    border-radius: 2rem;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}

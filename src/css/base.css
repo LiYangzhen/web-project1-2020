@@ -6,7 +6,7 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     font-weight: 400;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Noto+Sans+SC", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
 }
 
@@ -54,9 +54,9 @@ header {
     padding: 8px 2%;
     color: white;
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 1.4em;
-    letter-spacing: .1rem;
+    letter-spacing: 0.3rem;
     text-decoration: none;
     white-space: nowrap;
     margin-left: 5px;
@@ -85,10 +85,15 @@ footer {
     padding: 2em;
     border-bottom: 1px solid #45547a;
     margin-bottom: 0;
+    letter-spacing: 0.15rem;
 }
 
 .footer__body__column {
     width: 12em;
+}
+
+.footer__body__column li:hover a {
+    color: white;
 }
 
 .footer__body__column__title {
@@ -144,7 +149,7 @@ footer {
     font-weight: bold;
 }
 
-.footer__navbar__list {
+.footer__nav__list {
     display: flex;
     justify-content: flex-end;
     flex: 1;
@@ -153,20 +158,24 @@ footer {
     padding-top: 1em;
 }
 
-.footer__navbar__list li {
+.footer__nav__list li {
     margin: 0 0.5em;
     font-weight: bold;
     width: 4em;
 }
 
-.footer__navbar__list li:first-of-type {
+.footer__nav__list li:first-of-type {
     margin-left: 0;
 }
 
-.footer__navbar__list li:last-of-type {
+.footer__nav__list li:last-of-type {
     margin-right: 1em;
     width: 6em;
     margin-bottom: 0.8em;
+}
+
+.footer__nav__list li:hover a {
+    color: white;
 }
 
 .languageChoose {
@@ -179,6 +188,10 @@ footer {
 .languageChoose p {
     margin: 0;
     padding-left: 0.15em;
+}
+
+.languageChoose:hover p {
+    color: white;
 }
 
 .languageChoose img {

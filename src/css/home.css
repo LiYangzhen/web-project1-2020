@@ -1,0 +1,54 @@
+h1 {
+    font-size: 3.1em;
+    color: white;
+    margin: 7rem auto auto;
+    max-width: 60rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.mainImg {
+    display: inline-block;
+    padding-top: -50px;
+    height: 40rem;
+    width: 100%;
+    background-color: #232a34;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .mainImg {
+        background-image: url("../travel-images/480p.jpg");
+    }
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+    .mainImg {
+        background-image: url("../travel-images/720p.jpg");
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1080px) {
+    .mainImg {
+        background-image: url("../travel-images/1080p.jpg");
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1440px) {
+    .mainImg {
+        background-image: url("../travel-images/1440p.jpg");
+    }
+}
+
+@media (min-width: 1441px) {
+    .mainImg {
+        background-image: url("../travel-images/2160p.jpg");
+    }
+}
+
+
+
