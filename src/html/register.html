@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>账户登录-ImgShow</title>
+    <title>账户注册-ImgShow</title>
     <link rel="icon" href="../image/logo.svg">
     <meta name="description" content="home">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,12 +24,16 @@
 
 <form>
     <fieldset>
-        <legend>用户登录</legend>
-        <label for="account">用户名/邮箱<input id="account" type="text">
+        <legend>注册信息</legend>
+        <label for="account">用户名<input id="account" type="text">
         </label><br>
-        <label for="password">密码<input id="password" type="password">
+        <label for="emile">电子邮箱<input id="emile" type="email" placeholder="xxx@xxx">
         </label><br>
-        <input type="submit" value="登录">
+        <label for="password">密码<input id="password" type="password" placeholder="不少于8位的数字、字母或符号">
+        </label><br>
+        <label for="re-password">确认密码<input id="re-password" type="password" placeholder="请保持两次输入的密码相同">
+        </label><br>
+        <input type="submit" value="注册">
         <input type="reset" value="重设">
     </fieldset>
 </form>

@@ -21,93 +21,116 @@
 
 <body>
 <!--页眉-->
-<nav class="banner">
-    <a href="index.html" class="logo">
-        <img src="src/image/logo.svg" alt="logo">
-        <p>ImgShow</p>
-    </a>
-    <a href="#" class="highlight link">首页</a>
-    <a href="#" class="link">阅览</a>
-    <a href="#" class="link">搜图</a>
-</nav>
-
 <header class="mainImg">
+    <nav class="banner">
+        <a href="index.html" class="logo">
+            <img src="src/image/logo.svg" alt="logo">
+            <p>ImgShow</p>
+        </a>
+        <a href="#" class="highlight link">首页</a>
+        <a href="#" class="link">阅览</a>
+        <a href="#" class="link">搜图</a>
+    </nav>
     <h1>精彩的生活、宏伟的建筑与绚丽的风景在这里，一同分享</h1>
+    <label for="search">
+        <input id="search" type="search">
+        <button>搜索</button>
+    </label>
 </header>
 <!--内容-->
 <main>
     <h2>免费精美图片</h2>
     <section class="imgGroup">
-        <a href="#" class="thumbnail">
-            <img src="src/travel-images/small/5855174537.jpg" alt="图片">
-            <h3>Title</h3>
-            <p>富强、民主、文明、和谐、自由 、平等、公正、法治、爱国、敬业、诚信、友善</p>
-        </a>
-        <a href="#" class="thumbnail">
-            <img src="src/travel-images/small/6114850721.jpg" alt="图片">
-            <h3>Title</h3>
-            <p>一个幽灵，共产主义的幽灵，在欧洲大陆徘徊。为了对这个幽灵进行神圣的围剿，旧欧洲的一切势力，
-                教皇和沙皇、梅特涅和基佐、法国的激进派和德国的警察，都联合起来了。
-            </p>
-        </a>
-        <a href="#" class="thumbnail">
-            <img src="src/travel-images/small/8710247776.jpg" alt="图片">
-            <h3>Title</h3>
-            <p>中国是世界上历史最悠久的国家之一。中国各族人民共同创造了光辉灿烂的文化，具有光荣的革命传统。</p>
-        </a>
-        <a href="#" class="thumbnail">
-            <img src="src/travel-images/small/9493997865.jpg" alt="图片">
-            <h3>Title</h3>
-            <p>“我志愿加入中国共-产-党,拥护党的纲领,遵守党的章程,履行党员义务;执行党的决定,严守党的纪律,
-                保守党的秘密,对党忠诚,积极工作,为共-产主义奋斗终身,随时准备为党和人民牺牲一切,永不叛党。</p>
-        </a>
-        <a href="#" class="thumbnail">
-            <img src="src/travel-images/small/222222.jpg" alt="图片">
-            <h3>Title</h3>
-            <p>我志愿加入中国共产主义青年团,坚决拥护中国共产党的领导,遵守团的章程,执行团的决议,履行团员义务,
-                严守团的纪律,勤奋学习,积极工作,吃苦在前,享受在后,为共产主义事业而奋斗。</p>
-        </a>
-        <a href="#" class="thumbnail">
-            <img src="src/travel-images/small/8645912379.jpg" alt="图片">
-            <h3>Title</h3>
-            <p>"Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum Et harumd und lookum like Greek to me, dereud
-                facilis est er expedit distinct. Nam liber te conscient to factor tum poen legum
-                odioque civiuda. Et tam neque pecun modut est neque nonor et imper ned libidig met,
-                consectetur adipiscing elit, sed ut labore et dolore magna aliquam"</p>
-        </a>
-        <a href="#" class="thumbnail">
-            <img src="src/travel-images/small/6592317633.jpg" alt="图片">
-            <h3>Title</h3>
-            <p>腾飞腾飞，振翅高飞</p>
-        </a>
-        <a href="#" class="thumbnail">
-            <img src="src/travel-images/small/6115548152.jpg" alt="图片">
-            <h3>Title</h3>
-            <p>起来，饥寒交迫的奴隶！
-                起来，全世界受苦的人！
-                满腔的热血已经沸腾，
-                要为真理而斗争！
-                旧世界打个落花流水，
-                奴隶们起来，起来！
-                不要说我们一无所有，
-                我们要做天下的主人！</p>
-        </a>
-        <a href="#" class="thumbnail">
-            <img src="src/travel-images/small/9498388516.jpg" alt="图片">
-            <h3>Title</h3>
-            <p>复旦复旦旦复旦，巍巍学府文章焕，
-                学术独立思想自由，政罗教网无羁绊，
-                无羁绊前程远，向前，向前，向前进展。
-                复旦复旦旦复旦，日月光华同灿烂。
-                复旦复旦旦复旦，师生一德精神贯，
-                巩固学校维护国家，先忧后乐交相勉，
-                交相勉前程远，向前，向前，向前进展。</p>
-        </a>
+        <ul>
+            <li class="thumbnail">
+                <a href="#">
+                    <img src="src/travel-images/small/5855174537.jpg" alt="图片">
+                    <h3>Title</h3>
+                    <p>富强、民主、文明、和谐、自由 、平等、公正、法治、爱国、敬业、诚信、友善</p>
+                </a>
+            </li>
+            <li class="thumbnail">
+                <a href="#">
+                    <img src="src/travel-images/small/6114850721.jpg" alt="图片">
+                    <h3>Title</h3>
+                    <p>一个幽灵，共产主义的幽灵，在欧洲大陆徘徊。为了对这个幽灵进行神圣的围剿，旧欧洲的一切势力，
+                        教皇和沙皇、梅特涅和基佐、法国的激进派和德国的警察，都联合起来了。
+                    </p>
+                </a>
+            </li>
+            <li class="thumbnail">
+                <a href="#">
+                    <img src="src/travel-images/small/8710247776.jpg" alt="图片">
+                    <h3>Title</h3>
+                    <p>中国是世界上历史最悠久的国家之一。中国各族人民共同创造了光辉灿烂的文化，具有光荣的革命传统。</p>
+                </a>
+            </li>
+            <li class="thumbnail">
+                <a href="#">
+                    <img src="src/travel-images/small/9493997865.jpg" alt="图片">
+                    <h3>Title</h3>
+                    <p>“我志愿加入中国共-产-党,拥护党的纲领,遵守党的章程,履行党员义务;执行党的决定,严守党的纪律,
+                        保守党的秘密,对党忠诚,积极工作,为共-产主义奋斗终身,随时准备为党和人民牺牲一切,永不叛党。</p>
+                </a>
+            </li>
+            <li class="thumbnail">
+                <a href="#">
+                    <img src="src/travel-images/small/222222.jpg" alt="图片">
+                    <h3>Title</h3>
+                    <p>我志愿加入中国共产主义青年团,坚决拥护中国共产党的领导,遵守团的章程,执行团的决议,履行团员义务,
+                        严守团的纪律,勤奋学习,积极工作,吃苦在前,享受在后,为共产主义事业而奋斗。</p>
+                </a>
+            </li>
+            <li class="thumbnail">
+                <a href="#">
+                    <img src="src/travel-images/small/8645912379.jpg" alt="图片">
+                    <h3>Title</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum Et harumd und lookum like Greek to me, dereud
+                        facilis est er expedit distinct. Nam liber te conscient to factor tum poen legum
+                        odioque civiuda. Et tam neque pecun modut est neque nonor et imper ned libidig met,
+                        consectetur adipiscing elit, sed ut labore et dolore magna aliquam"</p>
+                </a>
+            </li>
+            <li class="thumbnail">
+                <a href="#">
+                    <img src="src/travel-images/small/6592317633.jpg" alt="图片">
+                    <h3>Title</h3>
+                    <p>腾飞腾飞，振翅高飞</p>
+                </a>
+            </li>
+            <li class="thumbnail">
+                <a href="#">
+                    <img src="src/travel-images/small/6115548152.jpg" alt="图片">
+                    <h3>Title</h3>
+                    <p>起来，饥寒交迫的奴隶！
+                        起来，全世界受苦的人！
+                        满腔的热血已经沸腾，
+                        要为真理而斗争！
+                        旧世界打个落花流水，
+                        奴隶们起来，起来！
+                        不要说我们一无所有，
+                        我们要做天下的主人！</p>
+                </a>
+            </li>
+            <li class="thumbnail">
+                <a href="#">
+                    <img src="src/travel-images/small/9498388516.jpg" alt="图片">
+                    <h3>Title</h3>
+                    <p>复旦复旦旦复旦，巍巍学府文章焕，
+                        学术独立思想自由，政罗教网无羁绊，
+                        无羁绊前程远，向前，向前，向前进展。
+                        复旦复旦旦复旦，日月光华同灿烂。
+                        复旦复旦旦复旦，师生一德精神贯，
+                        巩固学校维护国家，先忧后乐交相勉，
+                        交相勉前程远，向前，向前，向前进展。</p>
+                </a>
+            </li>
+        </ul>
     </section>
 </main>
 <!--页脚-->
@@ -210,7 +233,7 @@
     <div class="footer__nav">
         <ul>
             <li>
-                <a class="footer__navbar__logo" href="">
+                <a class="footer__navbar__logo" href="index.html">
                     <img src="src/image/logo.svg" alt="logo"/>
                     <div class="footer__logo__text">
                         <p><span>ImgShow</span> — 免费的精美照片由我们认真负责的TA们提供。</p>

@@ -1,5 +1,5 @@
 window.onscroll = function () {
-    var a = document.documentElement.scrollTop || document.body.scrollTop;     //滚动条y轴上的距离
+    const a = document.documentElement.scrollTop || document.body.scrollTop;     //滚动条y轴上的距离
     if (a > 100) {
         document.querySelector(".banner").style.backgroundColor = "#232a34";
     } else {
