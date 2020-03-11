@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
     <link href="../css/base.css" rel="stylesheet" type="text/css">
     <script src="../js/prefixfree.min.js" rel="script" type="text/javascript"></script>
 
@@ -17,23 +18,16 @@
 </head>
 
 <body>
-
-<h1>
-
-</h1>
-
-<form>
-    <fieldset>
-        <legend>用户登录</legend>
-        <label for="account">用户名/邮箱<input id="account" type="text">
-        </label><br>
-        <label for="password">密码<input id="password" type="password">
-        </label><br>
-        <input type="submit" value="登录">
-        <input type="reset" value="重设">
-    </fieldset>
-</form>
-
+<main>
+<div class="login_part">
+    <form action="#" method="post">
+        <input class="text" type="text" name="Username" placeholder="用户名" required="">
+        <input class="text" type="password" name="password" placeholder="密码" required="">
+        <input type="submit" value="登录" onclick="location.href=('../../index.html')">
+    </form>
+    <p>创建一个账号? <a href="register.html"> 立即注册!</a></p>
+</div>
+</main>
 <footer>
     <!--    页脚横幅-->
     <div class="footer__nav">

@@ -1,0 +1,282 @@
+html,body{
+    min-height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+main{
+    flex: 1;
+}
+
+/*-- main --*/
+.login_part {
+    width: 35%;
+    margin: 3.5em auto;
+    background: rgba(112,128,144 ,0.7);
+    background-size: cover;
+    padding: 3.5em 3em 3em;
+    font-size: 1.5rem;
+}
+
+input[type="text"], input[type="password"] {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 100;
+    margin: 3em 0 0;
+    width: 93%;
+    display: block;
+    border: none;
+    padding: 1em;
+    border-bottom: solid 1px #fff;
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background-size: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 4%) no-repeat -800px 0;
+}
+
+.text::-webkit-input-placeholder{
+    color: white;
+}
+
+.text:focus, .text:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+}
+
+.text:focus:-moz-placeholder, .text:valid:-moz-placeholder{
+    color: #FFC107;
+    font-size: .9em;
+    transform: translateY(-12px);
+    visibility: visible !important;
+}
+
+.text:focus::-moz-placeholder, .text:valid::-moz-placeholder{
+    color: #FFC107;
+    font-size: .9em;
+    transform: translateY(-12px);
+    visibility: visible !important;
+}
+
+.text:focus::-webkit-input-placeholder, .text:valid::-webkit-input-placeholder {
+    color: #FFC107;
+    font-size: .9em;
+    transform: translateY(-12px);
+    visibility: visible !important;
+}
+
+input{
+	color: #fff;
+	font-weight: 100;
+}
+
+input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #6439af;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    margin: 3em 0;
+}
+
+input[type="submit"]:hover {
+    background: #8a2be2;
+    transform: translateY(3px);
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.58);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.58);
+    transition: .5s all;
+}
+
+.login_part p {
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.login_part p a {
+    color: #fff;
+    transition: .5s all;
+}
+
+.login_part p a:hover {
+    color: #FFC107;
+}
+
+/*-- //copyright --*/
+/*-- responsive-design --*/
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 2.6em;
+    }
+
+    .login_part {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .login_part {
+        width: 45%;
+    }
+}
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 900px) {
+    input[type="text"], input[type="password"] {
+        margin: 2.5em 0 0;
+        width: 90%;
+    }
+
+    .login_part {
+        width: 52%;
+        margin: 3em auto;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 736px) {
+    .login_part {
+        padding: 0.5em 2.5em 2.5em;
+    }
+
+    .login_part {
+        width: 62%;
+        margin: 3em auto;
+    }
+}
+
+@media (max-width: 667px) {
+    .login_part {
+        width: 67%;
+    }
+
+    input[type="submit"] {
+        padding: 0.9em;
+    }
+}
+
+@media (max-width: 600px) {
+    input[type="text"], input[type="password"] {
+        padding: 1em 0.9em;
+    }
+
+    input[type="submit"] {
+        margin: 2.5em 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 568px) {
+    .login_part {
+        width: 75%;
+        margin: 2em auto;
+    }
+}
+
+@media (max-width: 414px) {
+    h1 {
+        font-size: 1.8em;
+        letter-spacing: 2px;
+    }
+
+    .login_part {
+        width: 85%;
+        margin: 1.5em auto;
+        padding: 0.5em 2em 2em;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: .9em;
+        width: 95%;
+        padding: .8em .5em;
+    }
+
+    .text:focus, .text:valid {
+        background-position: 0 0;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9em;
+    }
+
+    .login_part p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 384px) {
+    .login_part {
+        width: 88%;
+		padding: 2em 0 0;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 94%;
+    }
+}
+
+@media (max-width: 375px) {
+    .login_part p {
+        letter-spacing: 0;
+		padding-bottom: 1em;
+    }
+	.login_part {
+		width: 94%;
+
+	}
+
+	.login_part form{
+		margin: 1em 1em 0;
+	}
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+
+    .login_part {
+        width: 92%;
+        padding: 2em 0 1.8em;
+    }
+
+    .text:focus, .text:valid {
+        background-position: 0 0;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: .85em;
+        margin: 1.8em 0 0;
+    }
+
+    input[type="submit"] {
+        margin: 1.5em 0;
+        padding: 0.8em;
+    }
+}
+
+/*-- //responsive-design --*/
