@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="../css/normalize.css" rel="stylesheet" type="text/css">
     <link href="../css/base.css" rel="stylesheet" type="text/css">
+    <link href="../css/input_form.css" rel="stylesheet" type="text/css">
     <script src="../js/prefixfree.min.js" rel="script" type="text/javascript"></script>
 
     <meta name="theme-color" content="#232a34">
@@ -18,25 +19,20 @@
 
 <body>
 
-<h1>
-
-</h1>
-
-<form>
-    <fieldset>
-        <legend>注册信息</legend>
-        <label for="account">用户名<input id="account" type="text">
-        </label><br>
-        <label for="emile">电子邮箱<input id="emile" type="email" placeholder="xxx@xxx">
-        </label><br>
-        <label for="password">密码<input id="password" type="password" placeholder="不少于8位的数字、字母或符号">
-        </label><br>
-        <label for="re-password">确认密码<input id="re-password" type="password" placeholder="请保持两次输入的密码相同">
-        </label><br>
-        <input type="submit" value="注册">
-        <input type="reset" value="重设">
-    </fieldset>
-</form>
+<div class="form_part register">
+    <form action="#" method="post">
+        <label>用户名<input class="input_box" type="text" placeholder="ฅ( ̳• ◡ • ̳)ฅ" required="required">
+        </label>
+        <label>邮箱<input class="input_box" type="email" placeholder="example: ImgShow@fudan.edu.cn" required="required">
+        </label>
+        <label>密码<input class="input_box" type="password" placeholder="不少于八位的数字、字母、符号" required="required">
+        </label>
+        <label>确认密码<input class="input_box" type="password" placeholder="请保持两次输入密码的相同" required="required">
+        </label>
+        <input type="submit" value="注册" onclick="location.href=('../../index.html')">
+    </form>
+    <p>已有ImgShow账号? <a href="../../index.html"> 立即登录!</a></p>
+</div>
 
 <footer>
     <!--    页脚横幅-->

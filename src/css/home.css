@@ -113,14 +113,14 @@ button {
         margin: auto;
     }
 
-    .search_bar input{
+    .search_bar input {
         height: 52px;
         width: 560px;
         margin-left: -145px;
         font-size: 1.6rem;
     }
 
-    .search_bar button{
+    .search_bar button {
         right: -130px;
         height: 57px;
         width: 80px;
