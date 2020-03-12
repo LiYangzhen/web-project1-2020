@@ -49,3 +49,14 @@
         height: 56rem;
     }
 }
+
+@media (max-width: 340px) {
+    .thumbnail {
+        width: 36rem;
+        height: 55rem;
+    }
+    .thumbnail a img {
+        width: 36rem;
+        height: 48rem;
+    }
+}

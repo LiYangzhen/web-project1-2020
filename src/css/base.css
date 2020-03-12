@@ -18,8 +18,8 @@ li {
     list-style: none;
 }
 
-/*-----------------------------------------------*/
-/*页眉*/
+/*--------------页眉----------------*/
+
 .banner {
     color: white;
     padding-top: 1.5rem;
@@ -30,18 +30,6 @@ li {
     width: 97.5%;
     position: fixed;
     z-index: 1;
-}
-
-@media (max-width: 800px ) {
-    .banner {
-        width: 96%;
-    }
-}
-
-@media (max-width: 450px) {
-    .banner {
-        width: 92%;
-    }
 }
 
 .banner a.logo {
@@ -62,7 +50,7 @@ li {
     font-size: 1.7em;
 }
 
-.banner a.link {
+.banner a.link, .banner div {
     padding: 8px 2%;
     color: white;
     text-align: center;
@@ -76,13 +64,95 @@ li {
     background-color: rgba(255, 255, 255, .4);
 }
 
-.banner a.link:hover, .banner a.link.highlight {
+.banner div a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner a.link:hover, .banner div:hover, .banner a.link.highlight {
     background-color: white;
     color: black;
 }
 
-/*-----------------------------------------------*/
-/*页脚*/
+.banner div:hover a {
+    color: black;
+}
+
+@media (max-width: 800px ) {
+    .banner {
+        width: 96%;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner {
+        width: 92%;
+        font-size: 0.85rem;
+    }
+
+    .banner a img {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media (max-width: 340px) {
+    .banner {
+        width: 92%;
+        font-size: 0.75rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .banner a img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/*--------------页眉----------------*/
+/*--------------下拉框--------------*/
+
+.dropdown-menu ul li:hover > a {
+    color: white;
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+
+.dropdown-menu ul {
+    margin: 2rem 2rem 0 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.85);
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-menu:hover ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0.9rem 2rem 0 0;
+}
+
+.dropdown-menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+}
+
+.dropdown-menu ul a {
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+/*--------------下拉框--------------*/
+/*--------------页脚----------------*/
+
 footer {
     background-color: #071b4d;
     color: #9ca4b8;;
