@@ -11,14 +11,9 @@ h2 {
     font-size: 2.5em;
 }
 
-header {
-    display: inline-block;
+header{
     padding-top: -50px;
     height: 45rem;
-    width: 100%;
-    background-color: #232a34;
-    background-position: center 30%;
-    background-repeat: no-repeat;
 }
 
 .search_bar {
@@ -50,7 +45,7 @@ button {
 }
 
 .search_bar input {
-    border: 2px solid #c5464a;
+    border: 2px solid #8a2be2;
     border-radius: 5px;
     background: white;
     top: 0;
@@ -60,7 +55,7 @@ button {
 }
 
 .search_bar button {
-    background: #c5464a;
+    background: #6439af;
     border-radius: 0 5px 5px 0;
     width: 60px;
     top: 0;

@@ -1,0 +1,65 @@
+h2 {
+    display: block;
+    text-align: center;
+    font-size: 2.6rem;
+    background-color: silver;
+    margin: 0;
+    padding: 1rem;
+}
+
+main {
+    margin: 3rem 10rem 8rem;
+    border: 1px solid darkgrey;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px #888888;
+    overflow: hidden;
+}
+
+.imgGroup ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.banner {
+    background-color: #232a34;
+}
+
+.thumbnail {
+    width: 90%;
+    height: 25rem;
+    background-color: #d9d9d9;
+    margin: 2rem 2rem 2rem;
+    cursor: pointer;
+}
+
+.thumbnail a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.thumbnail a img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.thumbnail a p {
+    color: #a9a9a9;
+    font-size: 1.6rem;
+    margin: 1rem 2.9rem 0;
+    height: 15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.thumbnail a h3 {
+    color: black;
+    font-size: 2.2rem;
+    margin: 0.7rem 2.9rem 0;
+}
+
+.thumbnail a > div {
+    margin-top: 2rem;
+}

@@ -18,7 +18,17 @@ li {
     list-style: none;
 }
 
+
 /*--------------页眉----------------*/
+header {
+    display: inline-block;
+    padding-top: -50px;
+    height: 5.5rem;
+    width: 100%;
+    background-color: #232a34;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+}
 
 .banner {
     color: white;
@@ -278,4 +288,38 @@ footer {
 
 .languageChoose img {
     padding-top: 0.1em;
+}
+
+
+aside {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 20px;
+    bottom: 70px;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+/*-------------To-Top----------------*/
+aside a {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    box-shadow: 5px 5px 4px #888888;
+}
+
+aside a:first-child {
+    margin-bottom: 1.5rem;
+}
+
+aside a:hover {
+    padding-right: 1px;
+    box-shadow: none;
+}
+
+aside img {
+    width: 5rem;
+    height: 5rem;
 }
