@@ -4,11 +4,13 @@ window.onscroll = function () {
     b = b[b.length - 1];
 
     if (b.includes("index") && a > 100) {
-        document.querySelector(".banner").style.backgroundColor = "#232a34";
-    } else if (b.includes("my")) {
-        document.querySelector(".banner").style.backgroundColor = "#232a34";
+        if (a > 100) {
+            document.querySelector(".banner").style.backgroundColor = "#232a34";
+        } else {
+            document.querySelector(".banner").style.backgroundColor = "transparent";
+        }
     } else {
-        document.querySelector(".banner").style.backgroundColor = "transparent";
+        document.querySelector(".banner").style.backgroundColor = "#232a34";
     }
 
     if (a > 200) {
@@ -16,9 +18,5 @@ window.onscroll = function () {
     } else {
         document.querySelector("#sidebar").style.visibility = "hidden";
     }
-
 }
 ;
-
-
-
