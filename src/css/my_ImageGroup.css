@@ -1,0 +1,99 @@
+h2 {
+    display: block;
+    text-align: center;
+    font-size: 2.6rem;
+    background-color: silver;
+    margin: 0;
+    padding: 1rem;
+}
+
+main {
+    width: 85%;
+    margin: 3rem auto 5rem;
+}
+
+.imgGroup ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.banner {
+    background-color: #232a34;
+}
+
+.thumbnail {
+    width: 90%;
+    height: 25rem;
+    background-color: #d9d9d9;
+    margin: 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 0 4px 2px #999999;
+}
+
+.thumbnail a img {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.thumbnail div p {
+    color: #a9a9a9;
+    font-size: 1.6rem;
+    margin: 1rem 2.9rem 0;
+    height: 13rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.thumbnail div h3 {
+    color: black;
+    font-size: 2.2rem;
+    margin: 0.7rem 2.9rem 0;
+}
+
+.thumbnail div {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+.thumbnail div form {
+    margin: 0.7rem 2.9rem 0;
+    font-size: 1.7rem;
+}
+
+.thumbnail form input {
+    padding: 5px 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: white;
+    /*background-color: #45547a;*/
+    /*background-image: linear-gradient(#45547a, #37466E);*/
+    background: #6439af;
+    border: none;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+}
+
+.thumbnail div input:first-of-type {
+    margin-left: 0;
+}
+
+.thumbnail div input:hover {
+    background: #8a2be2;
+    box-shadow: 0 0 2px 1px #999999;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.thumbnail div input[name="delete"] {
+    background: #DC143C;
+}
+
+.thumbnail div input[name="delete"]:hover {
+    background: #FF0000;
+}

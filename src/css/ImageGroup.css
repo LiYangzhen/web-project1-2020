@@ -5,12 +5,16 @@
 }
 
 .thumbnail {
-    width: 33rem;
-    height: 52rem;
+    width: 42rem;
+    height: 64rem;
     background-color: #d9d9d9;
     margin: 2rem 2rem 2rem;
     cursor: pointer;
-    box-shadow: 5px 5px 4px #888888;
+
+}
+
+.thumbnail:hover {
+    box-shadow: 5px 5px 10px #888888;
 }
 
 .thumbnail a {
@@ -34,21 +38,7 @@
 }
 
 .thumbnail a img {
-    width: 33rem;
-    height: 44rem;
     object-fit: cover;
-}
-
-@media (min-width: 1000px) {
-    .thumbnail {
-        width: 42rem;
-        height: 64rem;
-    }
-
-    .thumbnail a img {
-        width: 42rem;
-        height: 56rem;
-    }
 }
 
 @media (max-width: 340px) {

@@ -5,7 +5,7 @@ window.onscroll = function () {
 
     if (b.includes("index") && a > 100) {
         document.querySelector(".banner").style.backgroundColor = "#232a34";
-    }else if (b.includes("my_favourite")){
+    } else if (b.includes("my")) {
         document.querySelector(".banner").style.backgroundColor = "#232a34";
     } else {
         document.querySelector(".banner").style.backgroundColor = "transparent";
@@ -17,7 +17,8 @@ window.onscroll = function () {
         document.querySelector("#sidebar").style.visibility = "hidden";
     }
 
-};
+}
+;
 
 
 
