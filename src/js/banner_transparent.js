@@ -3,7 +3,7 @@ window.onscroll = function () {
     let b = location.href.split('/');
     b = b[b.length - 1];
 
-    if (b.includes("index") && a > 100) {
+    if (b.includes("index")) {
         if (a > 100) {
             document.querySelector(".banner").style.backgroundColor = "#232a34";
         } else {

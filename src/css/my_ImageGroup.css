@@ -2,7 +2,7 @@ h2 {
     display: block;
     text-align: center;
     font-size: 2.6rem;
-    background-color: silver;
+    background: rgba(112, 128, 144, 0.5);
     margin: 0;
     padding: 1rem;
 }

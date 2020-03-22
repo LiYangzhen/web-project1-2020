@@ -36,8 +36,27 @@ main {
     margin: 0 0 1rem;
 }
 
+input[type="submit"] {
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    background: #6439af;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    margin: 3em auto;
+}
+
+input[type="submit"]:hover {
+    background: #8a2be2;
+    transform: translateY(3px);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.58);
+    transition: .5s all;
+}
+
 input[type="text"], input[type="password"], input[type="email"] {
-    font-size: 1em;
+    font-size: 1.7rem;
     color: #fff;
     font-weight: 100;
     margin: 1em 0 3em;
@@ -87,24 +106,7 @@ input {
     font-weight: 100;
 }
 
-input[type="submit"] {
-    font-size: 1em;
-    color: #fff;
-    background: #6439af;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    padding: 1em;
-    width: 100%;
-    margin: 3em 0;
-}
 
-input[type="submit"]:hover {
-    background: #8a2be2;
-    transform: translateY(3px);
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.58);
-    transition: .5s all;
-}
 
 .form_part p {
     font-size: 1em;
