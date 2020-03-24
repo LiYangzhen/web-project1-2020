@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="../css/normalize.css" rel="stylesheet" type="text/css">
     <link href="../css/base.css" rel="stylesheet" type="text/css">
+    <link href="../css/my_ImageGroup.css" rel="stylesheet" type="text/css">
+    <link href="../css/search.css" rel="stylesheet" type="text/css">
     <script src="../js/prefixfree.min.js" rel="script" type="text/javascript"></script>
     <script src="../js/banner_transparent.js" rel="script" type="text/javascript"></script>
 </head>
@@ -35,23 +37,24 @@
 </header>
 
 <aside id="sidebar" class="sidebar">
-    <a href="#top"><img src="../image/to_top.svg" alt="to top"  height="50" width="50"></a>
+    <a href="#top"><img src="../image/to_top.svg" alt="to top" height="50" width="50"></a>
 </aside>
 
 <main>
-    <form>
+    <form method="post" action="#">
         <h1>搜索</h1>
-        <label>按标题查询
-            <input type="radio" value="search by title" name="search_title">
-            <input type="search">
-        </label>
-        <label>按描述查询
-            <input type="radio" value="search by description" name="search_title">
-            <input type="search">
-        </label>
-        <input type="submit" value="搜索" name="search" formmethod="post" formaction="#">
+        <div class="search_box">
+            <input type="radio" value="search_by_title" name="search_type" id="search_by_title">
+            <label for="search_by_title">按标题查询</label>
+            <input type="search" name="title">
+            <input type="radio" value="search_by_description" name="search_type" id="search_by_description">
+            <label for="search_by_description">按描述查询</label>
+            <textarea type="search" name="description"></textarea>
+            <input type="submit" value="搜索" name="search">
+        </div>
     </form>
     <section class="imgGroup">
+        <h2>结果</h2>
         <ul>
             <li class="thumbnail">
                 <a href="#">

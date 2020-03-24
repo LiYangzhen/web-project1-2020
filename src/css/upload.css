@@ -2,10 +2,9 @@ form {
     display: flex;
     flex-direction: column;
     margin: 4rem auto 5rem;
-    width: 90%;
+    width: 85%;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background: rgba(112, 128, 144, 0.5);
 }
 
 form label {
@@ -22,6 +21,8 @@ label input {
     width: 100%;
     height: 2.8rem;
     opacity: 0.8;
+    background: #f3f5f8;
+    border: #888888 1px solid;
 }
 
 label input.submit {
@@ -34,6 +35,8 @@ label textarea.description {
     height: 20rem;
     width: 100%;
     opacity: 0.8;
+    background: #f3f5f8;
+    border: #888888 1px solid;
 }
 
 .ImgUpBtnBox {
@@ -46,8 +49,9 @@ label textarea.description {
 
 h3 {
     margin: 2rem 0 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-align: center;
+    letter-spacing: 0.5rem;
 }
 
 .ImgUpBtnBox input {
@@ -61,7 +65,7 @@ h3 {
     padding: 32px;
     cursor: pointer;
     margin-top: -6rem;
-    background: white;
+    background: #f3f5f8;
 }
 
 input[type="submit"] {
