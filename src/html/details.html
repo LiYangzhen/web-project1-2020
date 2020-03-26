@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="../css/normalize.css" rel="stylesheet" type="text/css">
     <link href="../css/base.css" rel="stylesheet" type="text/css">
+    <link href="../css/details.css" rel="stylesheet" type="text/css">
     <script src="../js/prefixfree.min.js" rel="script" type="text/javascript"></script>
     <script src="../js/banner_transparent.js" rel="script" type="text/javascript"></script>
 </head>
@@ -35,36 +36,21 @@
 </header>
 <main>
     <h2>详情</h2>
-    <div>
-        <img src="../travel-images/medium/6592317633.jpg" width="320" height="320">
-        <div>
-            <table>
-                <tr>
-                    <td>收藏人数</td>
-                </tr>
-                <tr>
-                    <td>99</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td rowspan="2">图片信息</td>
-                </tr>
-                <tr>
-                    <td>主题</td>
-                    <td>校园</td>
-                </tr>
-                <tr>
-                    <td>国家</td>
-                    <td>中国</td>
-                </tr>
-                <tr>
-                    <td>城市</td>
-                    <td>上海</td>
-                </tr>
-            </table>
+    <figure>
+        <img src="../travel-images/medium/6592317633.jpg" >
+        <div class="details">
+            <ul>
+                <li>收藏人数</li>
+                <li>99</li>
+            </ul>
+            <ul>
+                <li>图片信息</li>
+                <li>主题:<span class="subject">校园</span></li>
+                <li>国家:<span class="country">中国</span> </li>
+                <li>城市:<span class="city">上海</span> </li>
+            </ul>
         </div>
-    </div>
+    </figure>
     <article>
         <pre>一条大河波浪宽
 风吹稻花香两岸
