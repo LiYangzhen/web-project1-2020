@@ -36,6 +36,7 @@ figure .details {
     background-color: #f6f6f6;
     margin-left: 1rem;
     padding-left: 2rem;
+    padding-right: 2rem;
     letter-spacing: 0.1rem;
     line-height: 5rem;
 }
@@ -46,6 +47,34 @@ figure .details {
 
 li span {
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+li.collection_number{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF0000;
+    text-align: center;
+    line-height: 6rem;
+    position: relative;
+}
+
+li button{
+    margin-left: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    width: 32px;
+    height: 32px;
+    background: none;
+    background-image: url("../image/collect.png");
+    background-repeat: no-repeat;
+}
+
+li button:hover{
+    background-image: url("../image/collect_hover.png");
 }
 
 article {

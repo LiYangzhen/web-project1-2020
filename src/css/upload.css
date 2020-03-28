@@ -39,6 +39,18 @@ label textarea.description {
     border: #888888 1px solid;
 }
 
+.ImagesUpload{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.ImagesUpload img{
+    width: 35%;
+    margin: 2rem 1rem;
+    object-fit: scale-down;
+}
+
 .ImgUpBtnBox {
     width: auto;
     margin: 6rem auto 3rem;

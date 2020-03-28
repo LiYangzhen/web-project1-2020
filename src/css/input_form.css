@@ -1,17 +1,18 @@
 html, body {
     min-height: 100%;
     display: flex;
-    flex: 1;
     flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 a {
     text-decoration: none;
 }
 
-main {
-    flex: 1;
-}
+
 
 /*-- main --*/
 
@@ -105,8 +106,6 @@ input {
     color: #fff;
     font-weight: 100;
 }
-
-
 
 .form_part p {
     font-size: 1em;

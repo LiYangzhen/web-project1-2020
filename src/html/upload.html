@@ -41,9 +41,7 @@
             <input type="file" accept="image/*" name="ImagesUpload" id="ImagesUpload" class="uploadHide">
             <img src="../image/add.svg" class="uploadBtnImg" width="32" height="32"/>
         </label>
-        <div class="imgPreviewGroup">
-            <div id="InputImagePreview" class="img-preview"></div>
-        </div>
+        <div class="ImagesUpload" id="img-preview"></div>
         <label><p>图片标题</p>
             <input type="text" name="title" class="title" required>
         </label>
@@ -56,7 +54,7 @@
         <label><p>拍摄城市</p>
             <input type="text" name="city" class="city" required>
         </label>
-        <input type="submit" class="submit" value="上传">
+        <input type="submit" class="submit" value="上传" onclick="alert('上传的啥玩意儿？')">
     </form>
 </main>
 
@@ -94,5 +92,18 @@
         </ul>
     </div>
 </footer>
+
+<script>
+    document.getElementById("ImagesUpload").addEventListener("change", function () {
+        let reader = new FileReader();
+        reader.readAsDataURL(document.getElementById("ImagesUpload").files[0]);
+        reader.onload = function () {
+            let result = reader.result;
+            let image = document.createElement("img");
+            image.src = result;
+            document.getElementById("img-preview").appendChild(image);
+        }
+    })
+</script>
 </body>
 </html>

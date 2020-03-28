@@ -13,7 +13,7 @@
     <link href="../css/my_ImageGroup.css" rel="stylesheet" type="text/css">
     <link href="../css/search.css" rel="stylesheet" type="text/css">
     <script src="../js/prefixfree.min.js" rel="script" type="text/javascript"></script>
-    <script src="../js/banner_transparent.js" rel="script" type="text/javascript"></script>
+    <script src="../js/banner_transparent.js" rel="script" type="text/javascript" defer></script>
 </head>
 <body>
 <header class="mainImg">
@@ -24,7 +24,7 @@
         </a>
         <a href="../../index.html" class="link">首页</a>
         <a href="../html/search.html" class="link highlight">搜索</a>
-        <a href="../html/browse.html" class="link">阅览</a>
+        <a href="../html/browse.html" class="link">浏览</a>
         <div class="dropdown-menu">个人中心
             <ul>
                 <li class="menu_item"><a href="../html/upload.html">上传图片</a></li>
@@ -41,16 +41,16 @@
 </aside>
 
 <main>
-    <form method="post" action="#">
+    <form >
         <h1>搜索</h1>
         <div class="search_box">
-            <input type="radio" value="search_by_title" name="search_type" id="search_by_title">
+            <input type="radio" value="search_by_title" name="search_type" id="search_by_title" checked>
             <label for="search_by_title">按标题查询</label>
             <input type="search" name="title">
             <input type="radio" value="search_by_description" name="search_type" id="search_by_description">
             <label for="search_by_description">按描述查询</label>
             <textarea type="search" name="description"></textarea>
-            <input type="submit" value="搜索" name="search">
+            <input type="submit" value="搜索" name="search" id="search" onclick="return false;">
         </div>
     </form>
     <section class="imgGroup">
@@ -167,6 +167,7 @@
                 </a>
             </li>
         </ul>
+        <p> © 2020-现在 版权所有 备案号19302010059</p>
         <ul class="footer__nav__list">
             <li>
                 <a class="link" href="">使用条款</a>

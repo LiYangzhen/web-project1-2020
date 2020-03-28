@@ -18,5 +18,27 @@ window.onscroll = function () {
     } else {
         document.querySelector("#sidebar").style.visibility = "hidden";
     }
-}
-;
+};
+
+var search = document.getElementById("search");
+var imgGroup = document.querySelector(".imgGroup");
+var pagination = document.getElementById("pagination");
+
+search.onclick = function () {
+    event.preventDefault();
+    imgGroup.style.display = "unset";
+    pagination.style.display = "unset";
+    var ul = document.createElement('ul');
+    var ele =
+        '<li class="thumbnail">' +
+        '<a href="#">' +
+        '<img src="../travel-images/small/5855174537.jpg" alt="图片" width="200" height="250">' +
+        '</a>' +
+        '<div>' + '<h3>Title</h3>' +
+        '<p>四大会计利润还给我看</p>' +
+        '</div>' +
+        '</li>';
+    ul.innerHTML += ele;
+    imgGroup.appendChild(ul);
+    console.log(1);
+};
