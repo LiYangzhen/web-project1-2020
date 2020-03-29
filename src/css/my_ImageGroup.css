@@ -13,7 +13,6 @@ main {
 }
 
 
-
 .imgGroup ul {
     display: flex;
     flex-flow: row wrap;
@@ -33,9 +32,26 @@ main {
     box-shadow: 0 0 4px 2px #999999;
 }
 
+.thumbnail a{
+    width: 200px;
+    height: 250px;
+}
+
+.thumbnail .img-box {
+    margin: 0;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.thumbnail .img-box:hover img {
+    transform: scale(1.1);
+}
+
 .thumbnail a img {
     object-fit: cover;
     cursor: pointer;
+    transition: all .4s cubic-bezier(.645, .045, .355, 1);
 }
 
 .thumbnail div p {

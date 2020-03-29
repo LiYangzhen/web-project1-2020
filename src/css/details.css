@@ -33,7 +33,7 @@ figure .details {
 }
 
 .details li {
-    background-color: #f6f6f6;
+    background-color: white;
     margin-left: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -75,10 +75,11 @@ li button{
 
 li button:hover{
     background-image: url("../image/collect_hover.png");
+    cursor: pointer;
 }
 
 article {
-    background-color: #f6f6f6;
+    background-color: white;
     width: 90%;
     padding: 0.5rem 2rem 1rem 2rem;
     margin: 2rem auto 4rem;

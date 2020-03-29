@@ -12,17 +12,17 @@
     <link href="../css/base.css" rel="stylesheet" type="text/css">
     <link href="../css/browse.css" rel="stylesheet" type="text/css">
     <script src="../js/prefixfree.min.js" rel="script" type="text/javascript"></script>
-    <script src="../js/banner_transparent.js" rel="script" type="text/javascript"></script>
+    <script src="../js/onscroll.js" rel="script" type="text/javascript"></script>
 
 </head>
 <body>
 <header class="mainImg">
     <nav class="banner">
-        <a href="../../index.html" class="logo">
+        <a href="home.html" class="logo">
             <img src="../image/logo.svg" alt="logo">
             <p>ImgShow</p>
         </a>
-        <a href="../../index.html" class="link">首页</a>
+        <a href="home.html" class="link">首页</a>
         <a href="../html/search.html" class="link">搜索</a>
         <a href="../html/browse.html" class="link highlight">浏览</a>
         <div class="dropdown-menu">个人中心
@@ -30,7 +30,7 @@
                 <li class="menu_item"><a href="../html/upload.html">上传图片</a></li>
                 <li class="menu_item"><a href="../html/my_photos.html">我的图片</a></li>
                 <li class="menu_item"><a href="../html/my_favourite.html">我的收藏</a></li>
-                <li class="menu_item"><a href="../html/log_in.html">登录</a></li>
+                <li class="menu_item"><a href="../../index.html">登录</a></li>
             </ul>
         </div>
     </nav>
@@ -43,15 +43,15 @@
 <div class="browse_box">
     <aside class="search_nav">
         <div class="search_bar">
-            <form>
+            <form method="post" action="">
                 <input placeholder="请输入关键字" type="text">
-                <button type="submit">搜索</button>
+                <button type="submit" onclick="alert('?????')">搜索</button>
             </form>
         </div>
         <nav>
             <ul>
                 <li>热门内容快速浏览</li>
-                <li><a href="#" onclick="alert('你还想看啥？')">自然风景</a></li>
+                <li><a href="#"  onclick="alert('你还想看啥？')">自然风景</a></li>
                 <li><a href="#" onclick="alert('你还想看啥？')">城市建筑</a></li>
                 <li><a href="#" onclick="alert('你还想看啥？')">唯美人像</a></li>
                 <li><a href="#" onclick="alert('你还想看啥？')">自然动物</a></li>
@@ -334,87 +334,121 @@
         <ul>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/5855174537.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/5855174537.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/6114850721.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/6114850721.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/8710247776.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/8710247776.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/9493997865.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/9493997865.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/222222.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/222222.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/8645912379.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/8645912379.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/6592317633.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/6592317633.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/6115548152.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/6115548152.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/9498388516.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/9498388516.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/9498368556.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/9498368556.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/5856616479.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/5856616479.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/5855729828.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/5855729828.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/6592902825.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/6592902825.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/8710247776.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/8710247776.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/6115548152.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/6115548152.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/5855174537.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/5855174537.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
             <li class="thumbnail">
                 <a href="details.html">
-                    <img src="../travel-images/tiny/9498368556.jpg" alt="图片" width="150" height="150">
+                    <div class="img-box">
+                        <img src="../travel-images/small/9498368556.jpg" alt="图片" width="150" height="150">
+                    </div>
                 </a>
             </li>
         </ul>
@@ -438,7 +472,7 @@
     <div class="footer__nav">
         <ul>
             <li>
-                <a class="footer__navbar__logo" href="../../index.html">
+                <a class="footer__navbar__logo" href="home.html">
                     <img src="../image/logo.svg" alt="logo"/>
                     <div class="footer__logo__text">
                         <p><span>ImgShow</span> — 免费的精美照片由我们认真负责的TA们提供。</p>

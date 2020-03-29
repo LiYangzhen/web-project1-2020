@@ -12,16 +12,17 @@
     <link href="../css/base.css" rel="stylesheet" type="text/css">
     <link href="../css/upload.css" rel="stylesheet" type="text/css">
     <script src="../js/prefixfree.min.js" rel="script" type="text/javascript"></script>
-    <script src="../js/banner_transparent.js" rel="script" type="text/javascript"></script>
+    <script src="../js/onscroll.js" rel="script" type="text/javascript"></script>
+    <script src="../js/preview.js" rel="script" type="text/javascript" defer></script>
 </head>
 <body>
 <header class="mainImg">
     <nav class="banner">
-        <a href="../../index.html" class="logo">
+        <a href="home.html" class="logo">
             <img src="../image/logo.svg" alt="logo">
             <p>ImgShow</p>
         </a>
-        <a href="../../index.html" class="link">首页</a>
+        <a href="home.html" class="link">首页</a>
         <a href="../html/search.html" class="link">搜索</a>
         <a href="../html/browse.html" class="link">阅览</a>
         <div class="dropdown-menu highlight">个人中心
@@ -29,7 +30,7 @@
                 <li class="menu_item highlight"><a href="../html/upload.html">上传图片</a></li>
                 <li class="menu_item"><a href="../html/my_photos.html">我的图片</a></li>
                 <li class="menu_item"><a href="../html/my_favourite.html">我的收藏</a></li>
-                <li class="menu_item"><a href="../html/log_in.html">登录</a></li>
+                <li class="menu_item"><a href="../../index.html">登录</a></li>
             </ul>
         </div>
     </nav>
@@ -62,7 +63,7 @@
     <div class="footer__nav">
         <ul>
             <li>
-                <a class="footer__navbar__logo" href="../../index.html">
+                <a class="footer__navbar__logo" href="home.html">
                     <img src="../image/logo.svg" alt="logo"/>
                     <div class="footer__logo__text">
                         <p><span>ImgShow</span> — 免费的精美照片由我们认真负责的TA们提供。</p>
@@ -70,6 +71,7 @@
                 </a>
             </li>
         </ul>
+        <p> © 2020-现在 版权所有 备案号19302010059</p>
         <ul class="footer__nav__list">
             <li>
                 <a class="link" href="">使用条款</a>
@@ -92,18 +94,5 @@
         </ul>
     </div>
 </footer>
-
-<script>
-    document.getElementById("ImagesUpload").addEventListener("change", function () {
-        let reader = new FileReader();
-        reader.readAsDataURL(document.getElementById("ImagesUpload").files[0]);
-        reader.onload = function () {
-            let result = reader.result;
-            let image = document.createElement("img");
-            image.src = result;
-            document.getElementById("img-preview").appendChild(image);
-        }
-    })
-</script>
 </body>
 </html>
