@@ -11,48 +11,109 @@ var n = 0;
 var int;
 
 for (i = 0; i < len; i++) {
-    str += ' <span></span>'
+    str += " <span></span>";
 }
-pp[1].innerHTML = str;
+pp[0].innerHTML = str;
 
-var spans = pp[1].getElementsByTagName('span');  //获取p[1]里所有span标签
+var spans = pp[0].getElementsByTagName('span');  //获取p[1]里所有span标签
 spans[0].className = 'active';                  //给第一个span标签添加样式 active
 
 for (i = 0; i < len; i++) {
-    spans[i].index = i;              //自定义索引值
+    spans[i].index = i;                             //定义索引值
 
-    spans[i].onmousedown = function () {            //鼠标点击圆点时的事件
+    spans[i].onmousedown = function () {            //鼠标点击时的事件
         int = clearInterval(int);
         int = setInterval(ar.onclick, 8000);
         for (i = 0; i < len; i++) {
-            spans[i].className = "";               //通过循环，清除所有圆点的类名
+            spans[i].className = "";               //循环清除类名
+        }
+        if (n > this.index) {
+            switch (n) {
+                case 1:
+                    img2.style.left = "100%";
+                    setTimeout(function(){img2.style.opacity = "0";}, 500);
+                    img1.style.right = "100%";
+                    img1.style.opacity = "1";
+                    img1.style.left = "0";
+                    break;
+                case 2:
+                    switch (this.index) {
+                        case 0:
+                            img3.style.left = "100%";
+                            setTimeout(function(){img3.style.opacity = "0";}, 500);
+                            img1.style.right = "100%";
+                            img1.style.opacity = "1";
+                            img1.style.left = "0";
+                            break;
+                        case 1:
+                            img3.style.left = "100%";
+                            setTimeout(function(){img3.style.opacity = "0";}, 500);
+                            img2.style.right = "100%";
+                            img2.style.opacity = "1";
+                            img2.style.left = "0";
+                            break;
+                    }
+                    break;
+            }
+        } else if (n < this.index) {
+            switch (n) {
+                case 1:
+                    img2.style.left = "-100%";
+                    setTimeout(function(){img2.style.opacity = "0";}, 500);
+                    img3.style.right = "-100%";
+                    img3.style.opacity = "1";
+                    img3.style.left = "0";
+                    break;
+                case 0:
+                    switch (this.index) {
+                        case 1:
+                            img1.style.left = "-100%";
+                            setTimeout(function(){img1.style.opacity = "0";}, 500);
+                            img2.style.right = "-100%";
+                            img2.style.opacity = "1";
+                            img2.style.left = "0";
+                            break;
+                        case 2:
+                            img1.style.left = "-100%";
+                            setTimeout(function(){img1.style.opacity = "0";}, 500);
+                            img3.style.right = "-100%";
+                            img3.style.opacity = "1";
+                            img3.style.left = "0";
+                            break;
+                    }
+                    break;
+            }
         }
         n = this.index;
         this.className = 'active';                 //给鼠标移入的圆点添加类名
-        switch (n) {
-            case 0:
-                img2.style.display = "none";
-                img3.style.display = "none";
-                img1.style.display = "unset";
-                break;
-            case 1:
-                img1.style.display = "none";
-                img3.style.display = "none";
-                img2.style.display = "unset";
-                break;
-            case 2:
-                img1.style.display = "none";
-                img2.style.display = "none";
-                img3.style.display = "unset";
-                break;
-        }
-    }
-
+    };
 }
-
 ar.onclick = function () {            //右侧箭头，点击一次图片向右换一张
     int = clearInterval(int);
     int = setInterval(ar.onclick, 8000);
+    switch (n) {
+        case 0:
+            img1.style.left = "-100%";
+            setTimeout(function(){img1.style.opacity = "0";}, 500);
+            img2.style.right = "-100%";
+            img2.style.opacity = "1";
+            img2.style.left = "0";
+            break;
+        case 1:
+            img2.style.left = "-100%";
+            setTimeout(function(){img2.style.opacity = "0";}, 500);
+            img3.style.right = "-100%";
+            img3.style.opacity = "1";
+            img3.style.left = "0";
+            break;
+        case 2:
+            img3.style.left = "-100%";
+            setTimeout(function(){img3.style.opacity = "0";}, 500);
+            img1.style.right = "-100%";
+            img1.style.opacity = "1";
+            img1.style.left = "0";
+            break;
+    }
     n++;
     if (n > len - 1) {
         n = 0;
@@ -61,28 +122,34 @@ ar.onclick = function () {            //右侧箭头，点击一次图片向右�
         spans[i].className = "";
     }
     spans[n].className = "active";
-    switch (n) {
-        case 0:
-            img2.style.display = "none";
-            img3.style.display = "none";
-            img1.style.display = "unset";
-            break;
-        case 1:
-            img1.style.display = "none";
-            img3.style.display = "none";
-            img2.style.display = "unset";
-            break;
-        case 2:
-            img1.style.display = "none";
-            img2.style.display = "none";
-            img3.style.display = "unset";
-            break;
-    }
 };
 
 al.onclick = function () {        // //左侧箭头，点击一次图片向左换一张
     int = clearInterval(int);
     int = setInterval(ar.onclick, 8000);
+    switch (n) {
+        case 0:
+            img1.style.left = "100%";
+            setTimeout(function (){img1.style.opacity = "0";}, 500);
+            img3.style.right = "100%";
+            img3.style.opacity = "1";
+            img3.style.left = "0";
+            break;
+        case 1:
+            img2.style.left = "100%";
+            setTimeout(function(){img2.style.opacity = "0";}, 500);
+            img1.style.right = "100%";
+            img1.style.opacity = "1";
+            img1.style.left = "0";
+            break;
+        case 2:
+            img3.style.left = "100%";
+            setTimeout(function(){img3.style.opacity = "0";}, 500);
+            img2.style.right = "100%";
+            img2.style.opacity = "1";
+            img2.style.left = "0";
+            break;
+    }
     n--;
     if (n < 0) {
         n = (len - 1);
@@ -91,24 +158,7 @@ al.onclick = function () {        // //左侧箭头，点击一次图片向左�
         spans[i].className = "";
     }
     spans[n].className = "active";
-    switch (n) {
-        case 0:
-            img2.style.display = "none";
-            img3.style.display = "none";
-            img1.style.display = "unset";
-            break;
-        case 1:
-            img1.style.display = "none";
-            img3.style.display = "none";
-            img2.style.display = "unset";
-            break;
-        case 2:
-            img1.style.display = "none";
-            img2.style.display = "none";
-            img3.style.display = "unset";
-            break;
-    }
 };
 
-int = setInterval(ar.onclick, 8000);             //添加定时器  setInterval（函数，间隔时间单位为毫秒）
-//此次添加的函数为点击右侧箭头，间隔为5秒
+int = setInterval(ar.onclick, 8000);
+//添加的函数为点击右侧箭头，间隔为5秒

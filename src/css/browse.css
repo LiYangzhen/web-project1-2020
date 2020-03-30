@@ -112,6 +112,7 @@ aside nav li a {
     height: 35px;
     text-decoration: none;
     color: #0186ba;
+    display: block;
 }
 
 .browse_box main {

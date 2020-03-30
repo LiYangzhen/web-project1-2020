@@ -41,11 +41,27 @@ header {
     z-index: -1;
     height: 45rem;
     width: 100%;
+    left: 100%;
     object-fit: cover;
-    display: none;
+    opacity: 0;
+    transition: left .5s cubic-bezier(.645, .045, .355, 1), transform .5s cubic-bezier(.645, .045, .355, 1);
 }
-#scroll-img1{
-    display: unset;
+
+#scroll-img1 {
+    opacity: 1;
+    left: 0;
+}
+
+.scroll-img-box {
+    position: absolute;
+    height: 45rem;
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scroll-img-box:hover img {
+    transform: scale(1.05);
 }
 
 .home .picture {
@@ -205,16 +221,23 @@ header {
 /*--------------页眉----------------*/
 /*--------------下拉框--------------*/
 
-.dropdown-menu ul li:hover > a {
-    color: white;
+.dropdown-menu ul li:hover {
     background-color: #343a40;
-
 }
 
-.dropdown-menu ul li.highlight > a {
+.dropdown-menu ul li:hover a {
     color: white;
+}
+
+.dropdown-menu ul li.highlight {
     cursor: not-allowed;
     background-color: #343a40;
+}
+
+.dropdown-menu ul li.highlight a {
+    color: red;
+    cursor: not-allowed;
+    background-position: 8px -28px;
 }
 
 .dropdown-menu ul {
@@ -235,18 +258,49 @@ header {
 }
 
 .dropdown-menu ul li {
-    float: none;
     display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 0;
+    width: 13rem;
+    text-align: left;
+    transition: all .2s cubic-bezier(.645, .045, .355, 1);
 }
 
 .dropdown-menu ul a {
-    padding: 10px;
+    height: 28px;
+    padding-left: 4.5rem;
     display: block;
     white-space: nowrap;
     float: none;
     text-transform: none;
+    background-size: 28px auto;
+    background-position: 8px 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: all .2s cubic-bezier(.645, .045, .355, 1);
 }
+
+.dropdown-menu ul li:hover a {
+    background-position: 8px -28px;
+}
+
+.dropdown-menu .upload {
+    background-image: url("../image/upload.png");
+}
+
+.dropdown-menu .log-in {
+    background-image: url("../image/log-in.png");
+}
+
+.dropdown-menu .my-pictures {
+    background-image: url("../image/my_pictures.png");
+}
+
+.dropdown-menu .collections {
+    background-image: url("../image/collections.png");
+}
+
 
 /*--------------下拉框--------------*/
 
@@ -388,6 +442,7 @@ footer {
     color: white;
     text-decoration: none;
     transition: all .2s cubic-bezier(.645, .045, .355, 1);
+    display: block;
 }
 
 .icon-button-group {
@@ -396,6 +451,34 @@ footer {
 
 .icon-button-group a {
     flex: 1 1;
+    height: 28px;
+    width: 28px;
+}
+
+.icon-button-group .weChat {
+    background-image: url("../image/wechat.png");
+}
+
+.icon-button-group .email {
+    background-image: url("../image/email.png");
+}
+
+.icon-button-group .qq {
+    background-image: url("../image/qq.png");
+}
+
+.icon-button-group .github {
+    background-image: url("../image/github.png");
+}
+
+.weChat, .qq, .github, .email {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+}
+
+.weChat:hover, .qq:hover, .github:hover, .email:hover {
+    background-position: 0 -28px;
 }
 
 .footer__logo__text {
@@ -476,6 +559,7 @@ footer {
 .languageChoose p {
     margin: 0;
     padding-left: 0.15em;
+    transition: all .2s cubic-bezier(.645, .045, .355, 1);
 }
 
 .languageChoose:hover p {
