@@ -41,16 +41,18 @@ header {
     z-index: -1;
     height: 45rem;
     width: 100%;
-    left: 100%;
-    object-fit: cover;
     opacity: 0;
-    transition: left .5s cubic-bezier(.645, .045, .355, 1), transform .5s cubic-bezier(.645, .045, .355, 1);
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform .5s cubic-bezier(.645, .045, .355, 1);
+    animation-timing-function: ease-in-out;
 }
 
 #scroll-img1 {
-    opacity: 1;
     left: 0;
+    opacity: 1;
 }
+
 
 .scroll-img-box {
     position: absolute;
@@ -678,7 +680,7 @@ footer {
 .home h1 {
     font-size: 3.1em;
     color: white;
-    margin: 12rem auto auto;
+    margin: 12rem auto 18rem;
     max-width: 60rem;
     padding-left: 7px;
 }

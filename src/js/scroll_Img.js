@@ -30,27 +30,18 @@ for (i = 0; i < len; i++) {
         if (n > this.index) {
             switch (n) {
                 case 1:
-                    img2.style.left = "100%";
-                    setTimeout(function(){img2.style.opacity = "0";}, 500);
-                    img1.style.right = "100%";
-                    img1.style.opacity = "1";
-                    img1.style.left = "0";
+                    img2.style.animation = "scroll-out-right 0.5s ease-in-out forwards";
+                    img1.style.animation = "scroll-in-right 0.5s ease-in-out forwards";
                     break;
                 case 2:
                     switch (this.index) {
                         case 0:
-                            img3.style.left = "100%";
-                            setTimeout(function(){img3.style.opacity = "0";}, 500);
-                            img1.style.right = "100%";
-                            img1.style.opacity = "1";
-                            img1.style.left = "0";
+                            img3.style.animation = "scroll-out-right 0.5s ease-in-out forwards";
+                            img1.style.animation = "scroll-in-right 0.5s ease-in-out forwards";
                             break;
                         case 1:
-                            img3.style.left = "100%";
-                            setTimeout(function(){img3.style.opacity = "0";}, 500);
-                            img2.style.right = "100%";
-                            img2.style.opacity = "1";
-                            img2.style.left = "0";
+                            img3.style.animation = "scroll-out-right 0.5s ease-in-out forwards";
+                            img2.style.animation = "scroll-in-right 0.5s ease-in-out forwards";
                             break;
                     }
                     break;
@@ -58,34 +49,25 @@ for (i = 0; i < len; i++) {
         } else if (n < this.index) {
             switch (n) {
                 case 1:
-                    img2.style.left = "-100%";
-                    setTimeout(function(){img2.style.opacity = "0";}, 500);
-                    img3.style.right = "-100%";
-                    img3.style.opacity = "1";
-                    img3.style.left = "0";
+                    img2.style.animation = "scroll-out-left 0.5s ease-in-out forwards";
+                    img3.style.animation = "scroll-in-left 0.5s ease-in-out forwards";
                     break;
                 case 0:
                     switch (this.index) {
                         case 1:
-                            img1.style.left = "-100%";
-                            setTimeout(function(){img1.style.opacity = "0";}, 500);
-                            img2.style.right = "-100%";
-                            img2.style.opacity = "1";
-                            img2.style.left = "0";
+                            img1.style.animation = "scroll-out-left 0.5s ease-in-out forwards";
+                            img2.style.animation = "scroll-in-left 0.5s ease-in-out forwards";
                             break;
                         case 2:
-                            img1.style.left = "-100%";
-                            setTimeout(function(){img1.style.opacity = "0";}, 500);
-                            img3.style.right = "-100%";
-                            img3.style.opacity = "1";
-                            img3.style.left = "0";
+                            img1.style.animation = "scroll-out-left 0.5s ease-in-out forwards";
+                            img3.style.animation = "scroll-in-left 0.5s ease-in-out forwards";
                             break;
                     }
                     break;
             }
         }
         n = this.index;
-        this.className = 'active';                 //给鼠标移入的圆点添加类名
+        spans[n].className = "active";                //给鼠标移入的圆点添加类名
     };
 }
 ar.onclick = function () {            //右侧箭头，点击一次图片向右换一张
@@ -93,25 +75,16 @@ ar.onclick = function () {            //右侧箭头，点击一次图片向右�
     int = setInterval(ar.onclick, 8000);
     switch (n) {
         case 0:
-            img1.style.left = "-100%";
-            setTimeout(function(){img1.style.opacity = "0";}, 500);
-            img2.style.right = "-100%";
-            img2.style.opacity = "1";
-            img2.style.left = "0";
+            img1.style.animation = "scroll-out-left 0.5s ease-in-out forwards";
+            img2.style.animation = "scroll-in-left 0.5s ease-in-out forwards";
             break;
         case 1:
-            img2.style.left = "-100%";
-            setTimeout(function(){img2.style.opacity = "0";}, 500);
-            img3.style.right = "-100%";
-            img3.style.opacity = "1";
-            img3.style.left = "0";
+            img2.style.animation = "scroll-out-left 0.5s ease-in-out forwards";
+            img3.style.animation = "scroll-in-left 0.5s ease-in-out forwards";
             break;
         case 2:
-            img3.style.left = "-100%";
-            setTimeout(function(){img3.style.opacity = "0";}, 500);
-            img1.style.right = "-100%";
-            img1.style.opacity = "1";
-            img1.style.left = "0";
+            img3.style.animation = "scroll-out-left 0.5s ease-in-out forwards";
+            img1.style.animation = "scroll-in-left 0.5s ease-in-out forwards";
             break;
     }
     n++;
@@ -129,25 +102,16 @@ al.onclick = function () {        // //左侧箭头，点击一次图片向左�
     int = setInterval(ar.onclick, 8000);
     switch (n) {
         case 0:
-            img1.style.left = "100%";
-            setTimeout(function (){img1.style.opacity = "0";}, 500);
-            img3.style.right = "100%";
-            img3.style.opacity = "1";
-            img3.style.left = "0";
+            img1.style.animation = "scroll-out-right .5s ease-in-out forwards";
+            img3.style.animation = "scroll-in-right .5s ease-in-out forwards";
             break;
         case 1:
-            img2.style.left = "100%";
-            setTimeout(function(){img2.style.opacity = "0";}, 500);
-            img1.style.right = "100%";
-            img1.style.opacity = "1";
-            img1.style.left = "0";
+            img2.style.animation = "scroll-out-right 0.5s ease-in-out forwards";
+            img1.style.animation = "scroll-in-right 0.5s ease-in-out forwards";
             break;
         case 2:
-            img3.style.left = "100%";
-            setTimeout(function(){img3.style.opacity = "0";}, 500);
-            img2.style.right = "100%";
-            img2.style.opacity = "1";
-            img2.style.left = "0";
+            img3.style.animation = "scroll-out-right 0.5s ease-in-out forwards";
+            img2.style.animation = "scroll-in-right 0.5s ease-in-out forwards";
             break;
     }
     n--;

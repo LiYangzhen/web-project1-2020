@@ -19,9 +19,9 @@
 <!--页眉-->
 <header class="mainImg">
     <div class="scroll-img-box">
-    <img src="../travel-images/1080p.jpg" id="scroll-img1">
-    <img src="../travel-images/240123409634303026.jpg" id="scroll-img2">
-    <img src="../travel-images/202820355921412098%20(1).jpg" id="scroll-img3">
+        <img src="../travel-images/1080p.jpg" id="scroll-img1">
+        <img src="../travel-images/240123409634303026.jpg" id="scroll-img2">
+        <img src="../travel-images/202820355921412098%20(1).jpg" id="scroll-img3">
     </div>
     <nav class="banner">
         <a href="home.html" class="logo">
@@ -41,15 +41,10 @@
         </div>
     </nav>
     <h1>精彩的生活、宏伟的建筑与绚丽的风景在这里，一同分享</h1>
-    <div class="search_bar">
-        <form>
-            <input placeholder="搜索免费高清图片" type="text">
-            <button type="submit">搜索</button>
-        </form>
-    </div>
     <div class="scroll radius"></div>
     <div class="arrowhead-left" id="al"> <</div>
     <div class="arrowhead-right" id="ar"> ></div>
+
 </header>
 <!--内容-->
 <aside id="sidebar" class="sidebar">
@@ -276,5 +271,69 @@
         </ul>
     </div>
 </footer>
+<style>
+    @keyframes scroll-out-left {
+        from {
+            left: 0;
+            opacity: 1;
+        }
+
+        99% {
+            opacity: 1;
+        }
+
+        to {
+            left: -100%;
+            opacity: 0;
+        }
+    }
+
+    @keyframes scroll-out-right {
+        from {
+            left: 0;
+            opacity: 1;
+        }
+
+        99% {
+            opacity: 1;
+        }
+
+        to {
+            left: 100%;
+            opacity: 0;
+        }
+    }
+
+    @keyframes scroll-in-left {
+        from {
+            left: 100%;
+            opacity: 0;
+        }
+
+        1% {
+            opacity: 1;
+        }
+
+        to {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes scroll-in-right {
+        from {
+            left: -100%;
+            opacity: 0;
+        }
+
+        1% {
+            opacity: 1;
+        }
+
+        to {
+            left: 0;
+            opacity: 1;
+        }
+    }</style>
 </body>
 </html>
