@@ -19,6 +19,7 @@ main {
     justify-content: center;
 }
 
+
 .thumbnail {
     width: 90%;
     height: 25rem;
@@ -28,11 +29,45 @@ main {
     flex-direction: row;
 }
 
+@media (max-width: 500px) {
+    ul li.thumbnail {
+        flex-direction: column;
+        width: 280px;
+        height: 380px;
+        margin: 1rem 0;
+    }
+
+    .thumbnail div.img-box {
+        width: 280px;
+        height: 210px;
+    }
+
+    ul .thumbnail a {
+        width: 280px;
+        height: 210px;
+    }
+
+    .thumbnail a img {
+        width: 280px;
+        height: 210px;
+    }
+
+    ul .thumbnail div p {
+        height: 5rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+
 .thumbnail:hover {
     box-shadow: 0 0 4px 2px #999999;
 }
 
-.thumbnail a{
+.thumbnail a {
     width: 200px;
     height: 250px;
 }
@@ -49,6 +84,7 @@ main {
 }
 
 .thumbnail a img {
+    background-color: #232a34;
     object-fit: cover;
     cursor: pointer;
     transition: all .4s cubic-bezier(.645, .045, .355, 1);
@@ -59,6 +95,9 @@ main {
     font-size: 1.6rem;
     margin: 1rem 2.9rem 0;
     height: 13rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
     overflow: hidden;
     text-overflow: ellipsis;
 }

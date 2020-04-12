@@ -37,6 +37,7 @@ header {
 }
 
 #scroll-img1, #scroll-img2, #scroll-img3 {
+    background-color: #232a34;
     position: absolute;
     z-index: -1;
     height: 45rem;
@@ -191,6 +192,18 @@ header {
 @media (max-width: 800px ) {
     .banner {
         width: 96%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav.banner {
+        padding-top: 23px;
+    }
+}
+
+@media (min-width: 700px)and(max-width: 1200px) {
+    .mainImg nav.banner {
+        padding-right: 1rem;
     }
 }
 
@@ -596,6 +609,7 @@ footer {
 }
 
 .sidebar:hover {
+    cursor: pointer;
     padding-right: 1px;
     box-shadow: none;
 }
@@ -742,6 +756,7 @@ footer {
 }
 
 .home .thumbnail a img {
+    background-color: gray;
     object-fit: cover;
     transition: all .4s cubic-bezier(.645, .045, .355, 1);
 }

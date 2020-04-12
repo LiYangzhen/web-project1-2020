@@ -1,7 +1,7 @@
 .browse_box {
     display: flex;
     align-items: flex-start;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     font-size: 1.8rem;
     margin-bottom: 3rem;
@@ -94,15 +94,15 @@ aside nav li:last-of-type {
     border: none;
 }
 
-aside nav li:hover{
+aside nav li:hover {
     cursor: pointer;
 }
 
-aside nav li:first-of-type:hover{
+aside nav li:first-of-type:hover {
     cursor: auto;
 }
 
-aside nav li:hover a{
+aside nav li:hover a {
     color: red;
     font-weight: bold;
 }
@@ -116,11 +116,87 @@ aside nav li a {
 }
 
 .browse_box main {
+    width: 60%;
     margin-top: 4rem;
     margin-left: 2rem;
     margin-right: 13rem;
     background: rgba(112, 128, 144, 0.2);
 }
+
+@media (max-width: 1200px )and (min-width: 500px){
+
+    div.search_bar{
+        margin-left: 1rem;
+        width: 310px;
+    }
+    aside nav ul {
+        width: 20rem;
+    }
+
+    aside nav {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .browse_box aside {
+        margin-left: 2rem;
+        padding-left: 0;
+    }
+
+    aside.search_nav {
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .search_nav .search_list {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .browse_box main {
+        width: 80%;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .browse_box main {
+        width: 100%;
+        margin-right: 2rem;
+    }
+
+    .browse_box div.img-box {
+        width: 120px;
+        height: 120px;
+    }
+
+    .browse_box .img-box img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .search_nav nav {
+        display: none;
+    }
+
+    .search_bar {
+        margin-left: -120px;
+    }
+}
+
+@media (max-width: 350px) {
+    .browse_box div.img-box {
+        width: 100px;
+        height: 105px;
+    }
+
+    .browse_box .img-box img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 
 .browse_box main p {
     letter-spacing: 0.5rem;
@@ -133,12 +209,12 @@ aside nav li a {
     font-weight: bold;
 }
 
-.browse_box main select{
+.browse_box main select {
     margin-right: 2rem;
     background: #f3f5f8;
 }
 
-.browse_box main .selects{
+.browse_box main .selects {
     padding-left: 3rem;
 }
 
@@ -146,24 +222,25 @@ aside nav li a {
     margin-right: 1rem;
     margin-left: 3rem;
     display: flex;
-    flex-flow:row  wrap;
+    flex-flow: row wrap;
 }
 
-.browse_box main ul li{
-    margin: 1rem 2rem 1rem 0 ;
+.browse_box main ul li {
+    margin: 1rem 2rem 1rem 0;
 }
 
-.browse_box .img-box{
+.browse_box .img-box {
     width: 150px;
     height: 150px;
     overflow: hidden;
 }
 
-.browse_box .img-box img{
+.browse_box .img-box img {
+    background-color: gray;
     object-fit: cover;
     transition: all .4s cubic-bezier(.645, .045, .355, 1);
 }
 
-.browse_box .img-box:hover img{
+.browse_box .img-box:hover img {
     transform: scale(1.1);
 }

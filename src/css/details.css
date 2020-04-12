@@ -17,6 +17,7 @@ figure {
 }
 
 figure > img {
+    background-color: #232a34;
     flex: 1 1;
     margin-right: 1rem;
     width: 50%;
